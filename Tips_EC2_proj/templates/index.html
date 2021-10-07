@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Predict tips!!!</title>
+</head>
+<body>
+<div class='content'>
+    <h1>Tips for ABC Restaurant</h1>
+    <form action="/predict" method="POST">
+        Total Bill:<input type="text" name="total_bill">
+        <br/>
+        Sex:<select name="sex">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <select/>
+        Smoker:<select name="smoker">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <select/>
+        <br/>
+        Day:<select name="day">
+        <option value="Thur">Thur</option>
+        <option value="Fri">Fri</option>
+        <option value="Sat">Sat</option>
+        <option value="Sun">Sun</option>
+        <select/>
+        Time:<select name="time">
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+        <select/>
+        <br/>
+        Group Size:<select name="size">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <select/>
+        <br/>
+        <input type="submit" value="Submit">
+    </form>
+    <br/>
+    <br/>
+    {{ pred_res }}
+</div>
+
+</body>
+</html>
